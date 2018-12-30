@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 
-export default function StopWatch() {
+export default function StopWatch({ setName }) {
 
   const intervalRef = useRef(null);
 
@@ -21,7 +21,7 @@ export default function StopWatch() {
         setLapse(Date.now() - startTime)
       }, 0);
     }
-
+    setName(lapse);
     setIsRunning(!isRunning);
   }
 
