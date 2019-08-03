@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef } from "react";
 
 export default function StopWatch({ setName }) {
-
   const intervalRef = useRef(null);
 
   // Refer StopWatchReducer, written using reducer, redux like state management
@@ -18,7 +17,7 @@ export default function StopWatch({ setName }) {
     } else {
       const startTime = Date.now() - lapse;
       intervalRef.current = setInterval(() => {
-        setLapse(Date.now() - startTime)
+        setLapse(Date.now() - startTime);
       }, 0);
     }
     setName(lapse);
@@ -33,26 +32,25 @@ export default function StopWatch({ setName }) {
 
   return (
     <div style={{ textAlign: "center" }}>
-      <label
-        style={{ fontSize: '5em', display: 'block' }}>
-        {lapse}ms
-      </label>
+      <label style={{ fontSize: "5em", display: "block" }}>{lapse}ms</label>
 
       <button
-        style={{ fontSize: '4em', width: '350px' }}
-        onClick={handleStartClick}>
-        {isRunning ? 'STOP' : 'START'}
+        style={{ fontSize: "4em", width: "350px" }}
+        onClick={handleStartClick}
+      >
+        {isRunning ? "STOP" : "START"}
       </button>
 
       <br />
       <br />
 
       <button
-        style={{ fontSize: '4em', width: '350px' }}
-        onClick={handleClearClick}>
+        className="btn-clear"
+        style={{ fontSize: "4em", width: "350px" }}
+        onClick={handleClearClick}
+      >
         CLEAR
       </button>
     </div>
   );
 }
-
