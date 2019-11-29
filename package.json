@@ -4,13 +4,14 @@
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^5.6.1",
-    "@testing-library/jest-dom": "^4.0.0",
-    "@testing-library/react": "^8.0.7",
+    "@testing-library/jest-dom": "^4.2.3",
+    "@testing-library/react": "^8.0.9",
     "@testing-library/react-hooks": "^1.1.0",
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
-    "react-scripts": "3.0.1",
-    "react-test-renderer": "^16.8.6"
+    "immer": "^5.0.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-scripts": "^3.2.0",
+    "react-test-renderer": "^16.11.0"
   },
   "scripts": {
     "start": "react-scripts start",
