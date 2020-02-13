@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { FavoriteNumber } from "../Components/FavoriteNumber";
+import { FavoriteNumber } from "../components/favorite-number";
 import { getQueriesForElement } from "@testing-library/dom";
 
 // Using react-dom

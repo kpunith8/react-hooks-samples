@@ -1,5 +1,5 @@
 import { renderHook, act } from "@testing-library/react-hooks";
-import useCounter from "../Counter";
+import useCounter from "../components/use-counter-custom-hook";
 
 // Using @testing-library/react-hooks library
 describe("Test useCounter custom hook", () => {

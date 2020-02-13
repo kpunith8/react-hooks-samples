@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import StopWatch from './StopWatch';
+import StopWatch from './stop-watch-set-state';
 
 // memo is used to avoid the unneccesary renders, it can only be used with function components
 const UpperCase = React.memo(function UpperCase({ children }) {
@@ -15,13 +15,13 @@ const UpperCase = React.memo(function UpperCase({ children }) {
   );
 });
 
-export default function MemoHooks() {
+export default function MemoHookEx() {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   // Passing callback to another component
   const setNameCallBack = useCallback((name) => {
     setFirstName(name);
-  });
+  }, []);
 
   return (
     <div style={{ textAlign: 'center' }}>

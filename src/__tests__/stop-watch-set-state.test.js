@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { act } from "react-dom/test-utils";
-import StopWatch from "../StopWatch";
+import StopWatch from "../components/stop-watch-set-state";
 
 let container;
 
