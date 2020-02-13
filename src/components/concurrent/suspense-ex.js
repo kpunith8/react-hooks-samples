@@ -12,7 +12,7 @@ const resource = fetchProfileData();
 const SuspenseEx = () => {
   return (
     <div className="App">
-        <p>with Suspense</p>
+      <p>with Suspense</p>
       <Suspense fallback={<CircularProgress color="secondary" />}>
         <ProfileDetails resource={resource} />
         <ProfileTimeline resource={resource} />
